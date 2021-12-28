@@ -13,6 +13,9 @@
 		208440BD274785F6003AF27B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208440BB274785F6003AF27B /* Main.storyboard */; };
 		208440BF274785F7003AF27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208440BE274785F7003AF27B /* Assets.xcassets */; };
 		208440C2274785F7003AF27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208440C0274785F7003AF27B /* LaunchScreen.storyboard */; };
+		208E93BE277B506A006C502C /* Drive_ServiceRequests in Frameworks */ = {isa = PBXBuildFile; productRef = 208E93BD277B506A006C502C /* Drive_ServiceRequests */; };
+		208E93C2277B6736006C502C /* RequestPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E93C1277B6736006C502C /* RequestPageController.swift */; };
+		208E93C4277B67E7006C502C /* RequestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E93C3277B67E7006C502C /* RequestFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		208440BE274785F7003AF27B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		208440C1274785F7003AF27B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		208440C3274785F7003AF27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208E93C1277B6736006C502C /* RequestPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPageController.swift; sourceTree = "<group>"; };
+		208E93C3277B67E7006C502C /* RequestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				208E93BE277B506A006C502C /* Drive_ServiceRequests in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 				208440B5274785F6003AF27B /* AppDelegate.swift */,
 				208440B7274785F6003AF27B /* SceneDelegate.swift */,
 				208440B9274785F6003AF27B /* ViewController.swift */,
+				208E93C1277B6736006C502C /* RequestPageController.swift */,
+				208E93C3277B67E7006C502C /* RequestFile.swift */,
 				208440BB274785F6003AF27B /* Main.storyboard */,
 				208440BE274785F7003AF27B /* Assets.xcassets */,
 				208440C0274785F7003AF27B /* LaunchScreen.storyboard */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = Test1;
+			packageProductDependencies = (
+				208E93BD277B506A006C502C /* Drive_ServiceRequests */,
+			);
 			productName = Test1;
 			productReference = 208440B2274785F6003AF27B /* Test1.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 208440A9274785F6003AF27B;
+			packageReferences = (
+				208E93BC277B506A006C502C /* XCRemoteSwiftPackageReference "drive_servicerequests" */,
+			);
 			productRefGroup = 208440B3274785F6003AF27B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				208E93C2277B6736006C502C /* RequestPageController.swift in Sources */,
 				208440BA274785F6003AF27B /* ViewController.swift in Sources */,
 				208440B6274785F6003AF27B /* AppDelegate.swift in Sources */,
 				208440B8274785F6003AF27B /* SceneDelegate.swift in Sources */,
+				208E93C4277B67E7006C502C /* RequestFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		208E93BC277B506A006C502C /* XCRemoteSwiftPackageReference "drive_servicerequests" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://85.105.123.102/osman.cayir/drive_servicerequests";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		208E93BD277B506A006C502C /* Drive_ServiceRequests */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 208E93BC277B506A006C502C /* XCRemoteSwiftPackageReference "drive_servicerequests" */;
+			productName = Drive_ServiceRequests;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 208440AA274785F6003AF27B /* Project object */;
 }
