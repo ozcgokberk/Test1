@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Drive_ServiceRequests",
+        "repositoryURL": "http://85.105.123.102/osman.cayir/drive_servicerequests",
+        "state": {
+          "branch": "master",
+          "revision": "b5c3419d2d28887c0e5f90c073088756849a3737",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
