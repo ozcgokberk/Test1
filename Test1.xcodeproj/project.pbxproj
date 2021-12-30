@@ -13,7 +13,7 @@
 		208440BD274785F6003AF27B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208440BB274785F6003AF27B /* Main.storyboard */; };
 		208440BF274785F7003AF27B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208440BE274785F7003AF27B /* Assets.xcassets */; };
 		208440C2274785F7003AF27B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208440C0274785F7003AF27B /* LaunchScreen.storyboard */; };
-		208E93BE277B506A006C502C /* Drive_ServiceRequests in Frameworks */ = {isa = PBXBuildFile; productRef = 208E93BD277B506A006C502C /* Drive_ServiceRequests */; };
+		208DB823277CBC0300C86976 /* Drive_ServiceRequests in Frameworks */ = {isa = PBXBuildFile; productRef = 208DB822277CBC0300C86976 /* Drive_ServiceRequests */; };
 		208E93C2277B6736006C502C /* RequestPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E93C1277B6736006C502C /* RequestPageController.swift */; };
 		208E93C4277B67E7006C502C /* RequestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E93C3277B67E7006C502C /* RequestFile.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				208E93BE277B506A006C502C /* Drive_ServiceRequests in Frameworks */,
+				208DB823277CBC0300C86976 /* Drive_ServiceRequests in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 			);
 			name = Test1;
 			packageProductDependencies = (
-				208E93BD277B506A006C502C /* Drive_ServiceRequests */,
+				208DB822277CBC0300C86976 /* Drive_ServiceRequests */,
 			);
 			productName = Test1;
 			productReference = 208440B2274785F6003AF27B /* Test1.app */;
@@ -123,7 +123,7 @@
 			);
 			mainGroup = 208440A9274785F6003AF27B;
 			packageReferences = (
-				208E93BC277B506A006C502C /* XCRemoteSwiftPackageReference "drive_servicerequests" */,
+				208DB821277CBC0300C86976 /* XCRemoteSwiftPackageReference "drive_servicerequests" */,
 			);
 			productRefGroup = 208440B3274785F6003AF27B /* Products */;
 			projectDirPath = "";
@@ -378,7 +378,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		208E93BC277B506A006C502C /* XCRemoteSwiftPackageReference "drive_servicerequests" */ = {
+		208DB821277CBC0300C86976 /* XCRemoteSwiftPackageReference "drive_servicerequests" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "http://85.105.123.102/osman.cayir/drive_servicerequests";
 			requirement = {
@@ -389,9 +389,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		208E93BD277B506A006C502C /* Drive_ServiceRequests */ = {
+		208DB822277CBC0300C86976 /* Drive_ServiceRequests */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 208E93BC277B506A006C502C /* XCRemoteSwiftPackageReference "drive_servicerequests" */;
+			package = 208DB821277CBC0300C86976 /* XCRemoteSwiftPackageReference "drive_servicerequests" */;
 			productName = Drive_ServiceRequests;
 		};
 /* End XCSwiftPackageProductDependency section */
