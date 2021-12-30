@@ -9,7 +9,7 @@ import Foundation
 
 class RequestFile{
     
-    // buraya fonksiyon yazılacak.
+    // buraya fonksiyoon yazılacak.
     
     
     
