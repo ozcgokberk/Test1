@@ -7,20 +7,55 @@
 
 import UIKit
 
-class RequestPageController: UIViewController {
+class RequestPageController: UIViewController{
+  
+    
+
 
     @IBOutlet weak var requestScrollView: UIScrollView!
-    @IBOutlet weak var lblRequest: UILabel!
     
-    @IBOutlet weak var lblResponse: UILabel!
+    @IBOutlet weak var lblMethodName: UILabel!
+    
+    @IBOutlet weak var lblRequest: UILabel!
+    var methodName : String = ""
+    var fileObject = RequestFile()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Request Details"
-
+        lblMethodName.text = methodName
+        LaunchFunction()
+        fileObject.responseDelegate = self
+        
         // Do any additional setup after loading the view.
     }
+    
+    func LaunchFunction(){
+//        if methodName == "LogolarListesiGetirDisaridan"{
+//            fileObject.LogolarListesiGetir()
+//        }
+        switch methodName {
+        case "LogolarListesiGetirDisaridan":
+            fileObject.LogolarListesiGetir()
 
+        default:
+            print("nil")
+        }
+    }
+    
+    
     
     
 
+}
+extension  RequestPageController :  ResponseDelegate{
+    func didReceiveResponse(data: String?) {
+//        apply(data)
+        DispatchQueue.main.async {
+            self.lblRequest.text = data
+        }
+        
+    }
+    
+    
 }

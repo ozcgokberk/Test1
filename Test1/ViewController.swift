@@ -14,6 +14,7 @@ class ViewController: UIViewController,UISearchBarDelegate{
     
     var methodList: [String] = []
     var filteredData : [String]!
+
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class ViewController: UIViewController,UISearchBarDelegate{
     
     func GetMethodList(){
         
-        let documentsUrl = URL(string: "/Users/gokberkozcan/Documents/Drive_ServiceRequests/Requests/")
+        let documentsUrl = URL(string: "/Users/gokberkozcan/Documents/Drive_ServiceRequests/Sources/Drive_ServiceRequests/Requests/")
         let pathString = documentsUrl?.path
         do {
             
@@ -62,13 +63,24 @@ class ViewController: UIViewController,UISearchBarDelegate{
        
         self.tableView.reloadData()
     }
-  
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "requestViewController" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = segue.destination as! RequestPageController
+                
+                controller.methodName = filteredData[indexPath.row].replacingOccurrences(of: ".swift", with: "")
+                print(controller.methodName)
+          
+            }
+        }
+    }
     
 }
 
 extension ViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "requestViewController", sender: self)
+  
     }
 }
 extension ViewController : UITableViewDataSource{
